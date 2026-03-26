@@ -73,7 +73,7 @@ class AnimationController {
   setupTimeline() {
     this.timeline = gsap.timeline({ repeat: -1 }).to(this, {
       time: 1,
-      duration: 35, // Slower, more luxurious pacing (was 15)
+      duration: 15,
       repeat: -1,
       ease: 'none',
       onUpdate: () => this.render(),
@@ -193,9 +193,9 @@ class AnimationController {
 
     this.drawTrail(t1);
 
-    // Light theme: soft warm tones for an organic feel
+    // Light theme: gold/bronze particles
     if (this.lightMode) {
-      ctx.fillStyle = 'rgba(139, 115, 85, 0.4)'; // Soft taupe/ash
+      ctx.fillStyle = 'rgba(139, 115, 85, 0.7)';
     } else {
       ctx.fillStyle = 'white';
     }
@@ -213,10 +213,10 @@ class AnimationController {
       const sw =
         (1.3 * (1 - t1) + 3.0 * Math.sin(Math.PI * t1)) * f;
 
-      // Light theme: soft, organic glowing trail
+      // Light theme: warm gold trail
       if (this.lightMode) {
-        const alpha = 0.15 + 0.15 * f; // Much softer opacity
-        this.ctx.fillStyle = `rgba(201, 169, 110, ${alpha})`; // Soft gold
+        const alpha = 0.5 + 0.4 * f;
+        this.ctx.fillStyle = `rgba(139, 115, 85, ${alpha})`;
       } else {
         this.ctx.fillStyle = 'white';
       }

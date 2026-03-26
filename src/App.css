@@ -14,58 +14,11 @@
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.6;
-  mix-blend-mode: multiply; /* Blends naturally into the cream bg */
-  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
-  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  opacity: 0.35;
 }
 
 /* Content layered above background */
 .app-content {
   position: relative;
-  z-index: 10;
-}
-
-/* Splash Screen UI */
-.splash-ui {
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none; /* Let clicks pass except on button */
-}
-
-.splash-enter-btn {
-  pointer-events: auto;
-  font-family: "DM Sans", sans-serif;
-  color: #8B7355; 
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  font-weight: 300;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1.5s ease-out, transform 1.5s ease-out, letter-spacing 0.7s ease;
-  animation: pulse 3s infinite alternate;
-}
-
-.splash-enter-btn.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.splash-enter-btn:hover {
-  letter-spacing: 0.35em;
-  color: #1a1a1a;
-  animation: none;
-}
-
-@keyframes pulse {
-  0% { text-shadow: 0 0 10px rgba(139, 115, 85, 0.2); }
-  100% { text-shadow: 0 0 30px rgba(139, 115, 85, 0.6); }
+  z-index: 1;
 }
