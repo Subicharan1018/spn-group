@@ -1,0 +1,23 @@
+/* SpiralAnimation Styles */
+
+.spiral-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.spiral-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.spiral-bg-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}

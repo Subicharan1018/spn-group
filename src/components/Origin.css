@@ -1,0 +1,64 @@
+/* Origin.css */
+.origin-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.origin-image .image-placeholder {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, #f0e6d6 0%, #e8dcc8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.origin-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 2px;
+}
+
+.origin-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: var(--spacing-lg);
+}
+
+.origin-featured {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: var(--spacing-md);
+}
+
+.product-tag {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: var(--spacing-xs);
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .origin-content {
+    grid-template-columns: 1fr;
+  }
+}

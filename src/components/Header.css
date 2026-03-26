@@ -1,0 +1,81 @@
+/* Header Styles */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.site-header.scrolled {
+  background: rgba(250, 250, 247, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #1a1a1a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  border: 1px solid rgba(26, 26, 26, 0.15);
+  border-radius: 100px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.header-action-btn:hover {
+  background: rgba(139, 115, 85, 0.08);
+  border-color: #8B7355;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 1rem 1.25rem;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-logo {
+    font-size: 1.25rem;
+  }
+}

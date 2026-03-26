@@ -1,0 +1,30 @@
+/* ProductShowcase Styles */
+
+.product-showcase-wrapper {
+  background: #FAFAF7;
+}
+
+.product-showcase-intro {
+  text-align: center;
+  padding: 6rem 2rem 2rem;
+  background: #FAFAF7;
+}
+
+.product-showcase-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #8B7355;
+  margin-bottom: 1rem;
+}
+
+.product-showcase-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 0;
+}

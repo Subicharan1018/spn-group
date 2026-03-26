@@ -1,0 +1,130 @@
+/* GlowMenu — Light Theme Styles */
+
+.glow-menu {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.55)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-menu-nav-glow {
+  position: absolute;
+  inset: -0.5rem;
+  background: radial-gradient(
+    circle,
+    transparent,
+    rgba(139, 115, 85, 0.08) 30%,
+    rgba(139, 115, 85, 0.04) 60%,
+    transparent 100%
+  );
+  border-radius: 1.5rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.glow-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  position: relative;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.glow-menu-item {
+  position: relative;
+}
+
+.glow-menu-btn {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.glow-menu-flip {
+  display: block;
+  border-radius: 0.75rem;
+  overflow: visible;
+  position: relative;
+  perspective: 600px;
+}
+
+.glow-menu-glow-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 1rem;
+}
+
+.glow-menu-face {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 10;
+  background: transparent;
+  border-radius: 0.75rem;
+  transition: color 0.3s ease;
+  transform-style: preserve-3d;
+  color: #6b6b6b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.glow-menu-face.active {
+  color: #1a1a1a;
+}
+
+.glow-menu-face.front {
+  transform-origin: center bottom;
+}
+
+.glow-menu-face.back {
+  position: absolute;
+  inset: 0;
+  transform-origin: center top;
+}
+
+.glow-menu-icon {
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.glow-menu-icon svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.glow-menu-label {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .glow-menu-label {
+    display: none;
+  }
+
+  .glow-menu-face {
+    padding: 0.5rem 0.75rem;
+  }
+}
