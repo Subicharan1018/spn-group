@@ -8,22 +8,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const materials = [
   {
-    icon: "🌋",
-    name: "Volcanic Ash",
+    icon: "💎",
+    name: "Glass (Cullet)",
     description:
-      "Minerals left by ancient eruptions, purifying the skin and absorbing impurities to restore natural balance.",
+      "High-quality recycled glass fragments prepared for industrial furnace remelting, reducing energy consumption and emissions.",
   },
   {
-    icon: "💧",
-    name: "Pure Water",
+    icon: "🏗️",
+    name: "Metal Scrap",
     description:
-      "Flowing through layered earth, filtered by centuries of geological refinement into its purest form.",
+      "High-grade ferrous and non-ferrous metal fragments, processed and ready for industrial smelting and manufacturing.",
   },
   {
-    icon: "🌿",
-    name: "Wild Botanicals",
+    icon: "📄",
+    name: "Kraft Paper",
     description:
-      "Nurtured in silence by untouched forests, each botanical is a product of time and nature's care.",
+      "Premium, strong, and durable industrial paper material, ideal for high-strength packaging and sustainable container solutions.",
+  },
+  {
+    icon: "♻️",
+    name: "Plastics",
+    description:
+      "Assorted industrial polymers processed for second-life applications, promoting a circular economy in plastic manufacturing.",
   },
 ];
 
@@ -100,9 +106,9 @@ const MaterialsSection = () => {
       ref={sectionRef}
     >
       <div className="materials-inner">
-        <p className="materials-label">Our Ingredients</p>
+        <p className="materials-label">Our Materials</p>
         <h2 className="materials-heading">
-          Nature's Most Refined Elements
+          High-Grade Industrial Supply
         </h2>
 
         <div className="materials-grid">
@@ -120,19 +126,19 @@ const MaterialsSection = () => {
             <span className="materials-badge-icon">
               <Leaf size={16} />
             </span>
-            Vegan
+            Eco-Friendly
           </div>
           <div className="materials-badge">
             <span className="materials-badge-icon">
               <Gem size={16} />
             </span>
-            Mineral-Based
+            Industrial-Grade
           </div>
           <div className="materials-badge">
             <span className="materials-badge-icon">
               <Droplets size={16} />
             </span>
-            Cruelty-Free
+            Sustainably Sourced
           </div>
         </div>
       </div>

@@ -99,18 +99,17 @@ const HeroSection = () => {
   return (
     <section className="hero-section" id="home" ref={sectionRef}>
       <div className="hero-inner">
-        <div className="hero-badge">✦ Digital Awareness</div>
+        <div className="hero-badge">✦ Industrial Trading Platform</div>
         <h1 className="hero-brand">SPN Traders</h1>
         <p className="hero-tagline">
-          From The Sacred Soil of Arca
+          Bridging the Gap in Global Material Supply
         </p>
         <p className="hero-description">
-          Where ancient volcanic minerals meet modern beauty science.
-          Premium skincare crafted from the purest elements nature has
-          refined over millennia.
+          A modern digital trading platform connecting local vendors with large-scale industrial corporations. 
+          We specialize in the procurement and supply of high-grade industrial materials for sustainable manufacturing.
         </p>
-        <a href="#products" className="hero-cta">
-          Explore Collection
+        <a href="#materials" className="hero-cta">
+          Explore Materials
           <ArrowRight size={16} />
         </a>
         <div className="hero-divider" />

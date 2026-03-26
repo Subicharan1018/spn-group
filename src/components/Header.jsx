@@ -13,7 +13,7 @@ const menuItems = [
     iconColor: "#8B7355",
   },
   {
-    icon: Sparkles,
+    icon: Package,
     label: "Products",
     href: "#products",
     gradient:
@@ -21,12 +21,12 @@ const menuItems = [
     iconColor: "#C9A96E",
   },
   {
-    icon: Leaf,
+    icon: Sparkles,
     label: "Materials",
     href: "#materials",
     gradient:
-      "radial-gradient(circle, rgba(107,139,85,0.12) 0%, rgba(107,139,85,0.04) 50%, transparent 100%)",
-    iconColor: "#6B8B55",
+      "radial-gradient(circle, rgba(139,139,139,0.12) 0%, rgba(139,139,139,0.04) 50%, transparent 100%)",
+    iconColor: "#8B8B8B",
   },
   {
     icon: Info,

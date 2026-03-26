@@ -45,38 +45,35 @@ const OriginSection = () => {
         <div className="origin-visual">
           <div className="origin-visual-placeholder">
             <Mountain size={48} />
-            <span>Sacred Soil of Arca</span>
+            <span>Industrial Material Hub</span>
           </div>
           <div className="origin-visual-badge">
-            Est. Origin — Arca Region
+            Est. 2024 — Modern Material Chain
           </div>
         </div>
 
         <div className="origin-text">
-          <p className="origin-label">Our Story</p>
+          <p className="origin-label">Our Mission</p>
           <h2 className="origin-heading">
-            The Origin
+            Bridging the Gap
             <br />
-            of Clarity
+            in Material Supply
           </h2>
           <p className="origin-description">
-            Born from ancient volcanic traces, this fine mineral ash
-            purifies the skin and absorbs impurities, helping restore
-            its natural balance. Each product carries the legacy of
-            geological processes that span millennia.
+            SPN Traders was founded to solve a critical market fragmentation. We connect localized material collectors and small-scale vendors directly with large-scale industrial corporations. 
+            By digitizing the material supply chain, we ensure that recycled and raw materials reach their full potential in the modern production cycle.
           </p>
           <blockquote className="origin-quote">
-            "Where earth's deepest minerals surface, true beauty is
-            found — not manufactured, but revealed."
+            "Streamlining the connection between localized supply and global industrial demand."
           </blockquote>
           <div className="origin-featured">
             <div className="origin-featured-img">✦</div>
             <div className="origin-featured-info">
-              <span className="origin-featured-tag">Recommend</span>
+              <span className="origin-featured-tag">Service Highlight</span>
               <span className="origin-featured-name">
-                Aura Veil Facial Cream
+                B2B Material Procurement
               </span>
-              <span className="origin-featured-price">Luxury Skincare</span>
+              <span className="origin-featured-price">Commercial Logistics</span>
             </div>
           </div>
         </div>

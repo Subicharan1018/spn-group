@@ -9,18 +9,17 @@ const Footer = () => {
           <div className="footer-brand">
             <h2 className="footer-brand-name">SPN Traders</h2>
             <p className="footer-brand-desc">
-              Awakening the senses through nature's most refined
-              elements. A digital awareness platform celebrating the
-              art of premium skincare.
+              Bridging the gap between local vendors and large-scale industrial corporations. 
+              A modern digital trading platform for industrial materials.
             </p>
           </div>
 
           <div className="footer-col">
-            <h3 className="footer-col-title">Discover</h3>
-            <a href="#products">Our Products</a>
-            <a href="#materials">Ingredients</a>
-            <a href="#about">Our Story</a>
-            <a href="#home">Philosophy</a>
+            <h3 className="footer-col-title">Industrial</h3>
+            <a href="#products">Product Catalog</a>
+            <a href="#materials">Materials List</a>
+            <a href="#about">Our Mission</a>
+            <a href="#home">Infrastructure</a>
           </div>
 
           <div className="footer-col">

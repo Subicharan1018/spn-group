@@ -1,18 +1,33 @@
-# Project Context: SPN Traders - Digital Awareness
+# Project Context - SPN Traders
 
-## Background
-SPN Traders is a premium brand specializing in luxury skincare and personal care products that bridge the gap between ancient natural resources and modern digital awareness. The brand emphasizes purity, mineral-rich ingredients, and the sacred origin of its materials.
+## Overview
+SPN Traders (internally designated as `spn_project`) is a specialized B2B digital storefront and portal developed for a material trading enterprise. The application facilitates the efficient exhibition and categorization of various industrial materials, specifically focusing on recycling streams like glass bottles, metal scrap, kraft paper, and plastics.
 
-## Project Scope
-The project involves the development of a high-end digital platform (landing page) that serves as the official online presence for SPN Traders. The platform is designed to educate consumers about the brand's unique sourcing—specifically volcanic ash and botanical extracts—while providing a seamless, premium browsing experience.
+## Technical Architecture
+The application is built using a modern, scalable web stack:
+- **Framework:** Next.js 16 (App Router)
+- **Library:** React 19
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Slider/Carousel:** Swiper
+- **Language:** TypeScript
 
-## Key Objectives
-- **Brand Identity**: Establish a luxury digital identity that reflects the brand's "Digital Awareness" philosophy.
-- **Storytelling**: Communicate the "Origin of Clarity" and the "Sacred Soil of Arca" to create an emotional connection with users.
-- **Product Awareness**: Showcase the core product lineup through a visually rich, gallery-style interface.
-- **Transparency**: Highlight the materials and ingredients (Vegan, Mineral-based) to cater to conscious consumers.
+## Core Features
+1. **Material Catalog:** A comprehensive, categorized display of products including:
+   - **Glass/Cullet:** White, Green, Amber, etc.
+   - **Bottles:** Specialized brands and sizes (KALS, SNJ, MBDL, Kingfisher, etc.).
+   - **Metal Scrap:** Mild Steel (Light/Heavy), Stainless Steel (202/204).
+   - **Plastics:** Mixed plastics, granules, and color-coded batches.
+   - **Kraft:** Paper rolls, bags, and boxes.
+2. **Geographic Presence:** A detailed branch management system showcasing locations in Chennai, Sulur, and Ganapathi (Coimbatore), facilitating regional business connections.
+3. **Team Management:** A professional directory of the operational team across various cities such as Madurai, Tiruppur, Erode, and Karur.
+4. **Responsive UI:** A premium, "light-themed" aesthetic featuring backdrop blurs, gradients, and optimized imagery to provide a high-end B2B experience.
 
-## Target Audience
-- Luxury skincare enthusiasts.
-- Conscious consumers looking for vegan and naturally derived ingredients.
-- Individuals interested in the intersection of traditional mineral wisdom and modern beauty science.
+## Project Structure
+- `src/app/`: Contains the main layout and route-specific pages (About, Branches, Contact, Products, Team).
+- `src/components/`: Modular UI elements like `Navbar`, `Footer`, and specialized card components for products, branches, and team members.
+- `src/data/`: Centralized TypeScript data files (`products.ts`, `branches.ts`, `team.ts`) serving as the "single source of truth" for application content.
+- `public/`: Static assets including images and icons.
+
+## Significance
+SPN Traders represents a digital transformation in the traditional trading sector, providing small vendors with visibility to reach large companies while offering corporations a reliable, digitized interface for sourcing high-quality materials.

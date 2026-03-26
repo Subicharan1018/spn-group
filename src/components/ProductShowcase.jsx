@@ -4,32 +4,32 @@ import "./ProductShowcase.css";
 
 const sections = [
   {
-    leftLabel: "Flagship",
-    title: "Aura Veil",
-    rightLabel: "Facial Cream",
+    leftLabel: "Industrial",
+    title: "Glass Cullet",
+    rightLabel: "Recycled Grade",
     background:
-      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1920&h=1080&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=1920&h=1080&fit=crop&q=80",
   },
   {
-    leftLabel: "Botanical",
-    title: "Moss Bloom",
-    rightLabel: "Hair Oil",
+    leftLabel: "Heavy Duty",
+    title: "Metal Scrap",
+    rightLabel: "Ferrous & Non-Ferrous",
     background:
-      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1920&h=1080&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=1920&h=1080&fit=crop&q=80",
   },
   {
-    leftLabel: "Serum",
-    title: "Luminationing Spirum",
-    rightLabel: "Skin Enhancer",
+    leftLabel: "Packaging",
+    title: "Kraft Paper",
+    rightLabel: "Industrial Strength",
     background:
-      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=1920&h=1080&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=1920&h=1080&fit=crop&q=80",
   },
   {
-    leftLabel: "Emulsion",
-    title: "Thera Soil",
-    rightLabel: "Body Emulsion",
+    leftLabel: "Circular",
+    title: "Industrial Plastics",
+    rightLabel: "Polymer Material",
     background:
-      "https://images.unsplash.com/photo-1570194065650-d99fb4b38bff?w=1920&h=1080&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=1080&fit=crop&q=80",
   },
 ];
 

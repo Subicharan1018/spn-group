@@ -1,23 +1,5 @@
-# Project Abstract: SPN Traders Digital Platform
+# Abstract - SPN Traders
 
-## Overview
-The SPN Traders Digital Platform is a React-based web application designed to provide a "Digital Awareness" experience for a premium skincare line. The platform focuses on high-fidelity visual storytelling, emphasizing the brand's unique use of volcanic minerals and botanical extracts sourced from the "Sacred Soil of Arca."
+SPN Traders is a modern, digital trading platform designed to bridge the gap between local vendors and large-scale industrial corporations. Built as a high-performance web application, the project serves as a comprehensive inventory showcase and business portal for the trading of industrial materials, including glass (cullet), metal scrap, kraft paper, and plastics.
 
-## Core Features
-- **Cinematic Hero Section**: Introduces the brand's core concept and origin story.
-- **Material & Ingredient Showcase**: A dedicated section highlighting the use of volcanic ash, pure water, and wild botanicals, along with "Vegan" and "Mineral" certifications.
-- **Origin Narrative**: An immersive "Origin of Clarity" section that tells the story of how ancient geological processes contribute to modern skincare.
-- **Product Gallery**: A premium display of key products including:
-    - **Aura Veil Facial Cream**: The flagship luxury moisturizer.
-    - **Moss Bloom Hair Oil**: A botanical hair treatment.
-    - **Luminationing Spirum & Marolud**: High-potency skin enhancers.
-- **Responsive Footer**: Comprehensive navigation and brand information.
-
-## Technology Stack
-- **Frontend Framework**: [React.js](https://react.dev/) (v19) for component-based architecture.
-- **Build Tool**: [Vite](https://vite.dev/) for high-performance development and bundling.
-- **Styling**: Vanilla CSS for bespoke, premium aesthetics and rich micro-interactions.
-- **Routing**: React Router for potential multi-page expansion.
-
-## Design Philosophy
-The platform follows a "Digital Awareness" aesthetic—sharp, clean, and high-contrast, ensuring that the brand's premium nature is immediately apparent. It avoids generic templates in favor of a custom, cinematic layout that feels both organic and state-of-the-art.
+The platform's primary objective is to enhance digital awareness and provide a seamless interface for clients to explore a vast catalog of recycled and raw materials. By leveraging a premium, responsive design, SPN Traders establishes a professional online presence that facilitates trust and efficiency in the B2B recycling and material supply market. Key features include categorized product browsing, detailed branch information for regional accessibility, and a dedicated team overview, all aimed at streamlining the connection between supply and demand in the industrial recycling sector.
