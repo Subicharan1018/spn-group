@@ -7,6 +7,7 @@ import HeroSection from './components/HeroSection';
 import MaterialsSection from './components/MaterialsSection';
 import OriginSection from './components/OriginSection';
 import ProductShowcase from './components/ProductShowcase';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <MaterialsSection />
         <OriginSection />
         <ProductShowcase />
+        <ContactSection />
         <Footer />
       </div>
     </div>

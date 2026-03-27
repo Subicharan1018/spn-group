@@ -94,25 +94,22 @@ export const FullScreenScrollFX = forwardRef(
     }, []);
     const motionOff = reduceMotion ?? prefersReduced;
 
-    const tempWordBucket = useRef([]);
-    const splitWords = (text) => {
+    const splitWords = (text, sIdx) => {
       const words = text.split(/\s+/).filter(Boolean);
       return words.map((w, i) => (
         <span className="fx-word-mask" key={i}>
           <span
             className="fx-word"
-            ref={(el) => el && tempWordBucket.current.push(el)}
+            ref={(el) => {
+              if (!wordRefs.current[sIdx]) wordRefs.current[sIdx] = [];
+              wordRefs.current[sIdx][i] = el;
+            }}
           >
             {w}
           </span>
           {i < words.length - 1 ? " " : null}
         </span>
       ));
-    };
-
-    const WordsCollector = ({ onReady }) => {
-      useEffect(() => onReady(), []); // eslint-disable-line
-      return null;
     };
 
     const computePositions = () => {
@@ -517,7 +514,6 @@ export const FullScreenScrollFX = forwardRef(
                   {/* Center title */}
                   <div className="fx-center">
                     {sections.map((s, sIdx) => {
-                      tempWordBucket.current = [];
                       const isString = typeof s.title === "string";
                       return (
                         <div
@@ -528,19 +524,9 @@ export const FullScreenScrollFX = forwardRef(
                         >
                           <h3 className="fx-featured-title">
                             {isString
-                              ? splitWords(s.title)
+                              ? splitWords(s.title, sIdx)
                               : s.title}
                           </h3>
-                          <WordsCollector
-                            onReady={() => {
-                              if (tempWordBucket.current.length) {
-                                wordRefs.current[sIdx] = [
-                                  ...tempWordBucket.current,
-                                ];
-                              }
-                              tempWordBucket.current = [];
-                            }}
-                          />
                         </div>
                       );
                     })}

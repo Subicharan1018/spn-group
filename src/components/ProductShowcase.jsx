@@ -1,35 +1,35 @@
 import React, { useRef } from "react";
 import { FullScreenScrollFX } from "./ui/FullScreenScrollFX";
 import "./ProductShowcase.css";
+import glassCulletImg from "../assets/glasscullet.jpeg";
+import metalScrapImg from "../assets/MetalScrap.jpg";
 
 const sections = [
   {
     leftLabel: "Industrial",
     title: "Glass Cullet",
     rightLabel: "Recycled Grade",
-    background:
-      "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=1920&h=1080&fit=crop&q=80",
+    background: glassCulletImg,
   },
   {
     leftLabel: "Heavy Duty",
     title: "Metal Scrap",
     rightLabel: "Ferrous & Non-Ferrous",
-    background:
-      "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=1920&h=1080&fit=crop&q=80",
+    background: metalScrapImg,
   },
   {
     leftLabel: "Packaging",
     title: "Kraft Paper",
     rightLabel: "Industrial Strength",
     background:
-      "https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=1920&h=1080&fit=crop&q=80",
+      "https://shreevarudi.com/uploads/media/o_1gpk29g9vf341t42cen1aik158ta.jpg",
   },
   {
     leftLabel: "Circular",
     title: "Industrial Plastics",
     rightLabel: "Polymer Material",
     background:
-      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&h=1080&fit=crop&q=80",
+      "https://cdn.timesofabetterindia.com/uploads/inspiring-stories/f-P3FlhJ94F68X3ufh8kS4uRD18aim6h-metaSW5saW5lIGltYWdlIDEwMDAgeCA3NTAgcHguanBn-.jpg",
   },
 ];
 
