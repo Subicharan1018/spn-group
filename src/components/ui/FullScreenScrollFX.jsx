@@ -592,9 +592,7 @@ export const FullScreenScrollFX = forwardRef(
             </div>
           </div>
 
-          <div className="fx-end">
-            <p className="fx-fin">fin</p>
-          </div>
+
         </div>
       </div>
     );
